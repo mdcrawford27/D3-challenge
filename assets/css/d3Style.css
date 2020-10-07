@@ -1,0 +1,93 @@
+.axisText {
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  }
+  
+.heading {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 34px;
+  letter-spacing: -0.8px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  }
+
+  .active {
+    font-weight: bold;
+    fill: #000;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  .inactive {
+    font-weight: lighter;
+    fill: #c9c9c9;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  .inactive:hover {
+    fill: #000;
+    cursor: pointer;
+  }
+  
+  /* font size dependent on radius, see app.js */
+  .stateText {
+    font-family: sans-serif;
+    fill: #fff;
+    text-anchor: middle;
+  }
+  
+  .stateCircle {
+    fill: #89bdd3;
+    stroke: #e3e3e3;
+  }
+  
+  .chart {
+    display: block;
+    margin: 0;
+    background: rgb(235, 249, 255);
+  }
+  
+  .tooltip {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    padding: 10px;
+    font: 12px sans-serif;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Rules */
+  @media screen and (max-width: 530px) {
+    .stateText {
+      display: none;
+    }
+  
+    .aText {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .aText {
+      font-size: 13px;
+    }
+  }
+  
